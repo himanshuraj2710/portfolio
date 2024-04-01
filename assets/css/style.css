@@ -279,7 +279,7 @@ nav{
 
 /* ----- MAIN BOX ----- */
 .section{
-    padding-block: 5em;
+    padding-block: 9em;
 }
 .row{
     display: flex;
@@ -343,28 +343,104 @@ h3{
 }
 
 /* ----- ABOUT / SKILLS BOX ----- */
-.skills-box{
+.skills-box {
     margin: 10px;
-	margin-left: 50px;
-	position: relative;
+    margin-left: 50px;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column; /* Updated to stack items vertically by default */
 }
-.skills-header{
+
+.skills-header {
     margin-bottom: 30px;
+    text-align: center; /* Centering the text */
 }
-.skills-list{
+
+.skills-header h3 {
+    margin: 0; /* Remove default margin */
+}
+
+.skills-list {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
 }
-.skills-list span{
+
+.skills-list span {
     font-size: 14px;
     background: var(--first-color);
     color: var(--color-white);
     padding: 2px 10px;
     border-radius: 5px;
+}
+
+/* Media query for smaller screens (phones) */
+@media screen and (max-width: 768px) {
+    .skills-box {
+        margin-left: 0; /* Resetting left margin */
+    }
+}
+
+
+
+/* equipments */
+/* .section {
+    padding: 20px;
+}
+
+.top-header {
+    text-align: center;
+}
+*/
+#rolo {
+    display: flex;
+    justify-content: center;
+}
+
+#eqiii{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+
+.EQUIP-box {
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    padding: 15px;
+    width: 80%; /* Adjust as needed */
+    max-width: 400px; /* Adjust as needed */
+}
+
+.EQUIP-header {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.EQUIP-list {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.EQUIP-list span {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Media query for smaller screens (phones) */
+@media screen and (max-width: 768px) {
+    .col {
+        align-items: stretch;
+    }
+    
+    .EQUIP-box {
+        width: 100%;
+        max-width: none;
+    }
 }
 
 /* ----- PROJECTS BOX ----- */
@@ -626,7 +702,6 @@ footer{
 }
 
 /* ----- MEDIA QUERY == 540px / RESPONSIVE ----- */
-
 @media only screen and (max-width: 540px){
     .featured-name{
         font-size: 40px;

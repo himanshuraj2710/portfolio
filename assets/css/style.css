@@ -375,7 +375,7 @@ h3{
     text-align: center;
 }
 */
-#rolo {
+/* #rolo {
     display: flex;
     justify-content: center;
 }
@@ -410,7 +410,41 @@ h3{
 .EQUIP-list span {
     display: block;
     margin-bottom: 5px;
+} */
+
+
+/* Ensure the parent container takes full width */
+#rolo {
+    width: 100%;
 }
+
+/* Apply flexbox to the column */
+#eqiii {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style the container to arrange items in columns */
+.EQUIP-container {
+    display: flex;
+    flex-direction: column; /* Arrange the boxes vertically */
+    gap: 20px; /* Add space between the boxes */
+}
+
+/* Optional styles for the boxes and headers */
+.EQUIP-box {
+    border: 1px solid #ccc; /* Optional: Add border for visual separation */
+    padding: 20px; /* Optional: Add padding for spacing inside the boxes */
+}
+
+.EQUIP-header {
+    text-align: center; /* Center align the headers */
+}
+
+.EQUIP-list {
+    margin-top: 10px; /* Add margin-top for spacing between header and list */
+}
+
 
 /* Media query for smaller screens (phones) */
 @media screen and (max-width: 768px) {

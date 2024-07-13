@@ -378,12 +378,16 @@ h3{
 #rolo {
     display: flex;
     justify-content: center;
+    margin-left: 80;
 }
 
-#eqiii{
+#eqiii {
     display: flex;
-    align-items: center;
-} 
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
 
 .EQUIP-box {
     margin-bottom: 20px;

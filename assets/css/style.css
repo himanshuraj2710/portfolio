@@ -265,7 +265,7 @@ nav{
 .row{
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: 150%;
     gap: 50px;
 }
 .col{
